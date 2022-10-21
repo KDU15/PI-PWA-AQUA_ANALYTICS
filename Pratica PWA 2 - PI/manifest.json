@@ -90,32 +90,42 @@
     ],
     "screenshots": [
       {
-        "src": "/assets/img/pwa/prints/print1.png",
-        "type": "image/png",
-        "sizes": "540x720"
-      },
-      {
-        "src": "/assets/img/pwa/prints/print2.png",
+        "src": "/assets/img/pwa/prints/print1.jpg",
         "type": "image/jpg",
         "sizes": "540x720"
       },
       {
-        "src": "/assets/img/pwa/prints/print3.png",
+        "src": "/assets/img/pwa/prints/print2.jpg",
         "type": "image/jpg",
         "sizes": "540x720"
       },
       {
-        "src": "/assets/img/pwa/prints/print4.png",
+        "src": "/assets/img/pwa/prints/print3.jpg",
         "type": "image/jpg",
         "sizes": "540x720"
       },
       {
-        "src": "/assets/img/pwa/prints/print5.png",
+        "src": "/assets/img/pwa/prints/print4.jpg",
         "type": "image/jpg",
         "sizes": "540x720"
       },
       {
-        "src": "/assets/img/pwa/prints/print6.png",
+        "src": "/assets/img/pwa/prints/print5.jpg",
+        "type": "image/jpg",
+        "sizes": "540x720"
+      },
+      {
+        "src": "/assets/img/pwa/prints/print6.jpg",
+        "type": "image/jpg",
+        "sizes": "540x720"
+      },
+      {
+        "src": "/assets/img/pwa/prints/print7.jpg",
+        "type": "image/jpg",
+        "sizes": "540x720"
+      },
+      {
+        "src": "/assets/img/pwa/prints/print8.jpg",
         "type": "image/jpg",
         "sizes": "540x720"
       }
@@ -132,7 +142,7 @@
     "scope": "/app/",
     "start_url": "index.html",
     "orientation": "portrait",
-    "display_override": "minimal-ui",
+    "display_override": ["minimal-ui"],
     "background_color": "#0070A3",
     "theme_color": "#0070A3" 
   }

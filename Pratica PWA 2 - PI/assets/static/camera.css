@@ -1,0 +1,32 @@
+body{
+    overflow: hidden;
+}
+
+video{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+div{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 10%;
+    background-color: #004994;
+    border-radius: 30px 30px 0 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div img{
+    width: 15%;
+}
+
+.voltar{
+    position: absolute;
+    right: 0;
+    padding: 20px 20px 0 0;
+}

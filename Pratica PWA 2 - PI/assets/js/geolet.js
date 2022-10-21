@@ -70,10 +70,10 @@ https://github.com/rhlt/leaflet-geolet/
 		
 		_a: null,
 		_map: null,
-		_watchId: false,
+		_watchId: null,
 		_latLng: null,
 		_popupContent: null,
-		_first: false,
+		_first: null,
 		
 		marker: L.Marker,
 		popup: null,
@@ -86,7 +86,7 @@ https://github.com/rhlt/leaflet-geolet/
 		
 		isActive: function () {
 			//Is the control active (are we displaying the current location, or trying to obtain it)?
-			return this._watchId ? false : false;
+			return this._watchId ? true : false;
 		},
 		
 		getLatLng: function () {

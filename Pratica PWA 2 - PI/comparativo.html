@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/assets/static/style.css">
+        <link rel="stylesheet" href="/assets/static/comparativo.css">
+        <title>Comparação</title>
+    </head>
+    <body>
+        <img class="background-telas" src="/assets/img/background-telas.svg" alt="background-telas">
+
+        <div class="header">
+            <div class="identificador">
+                <img src="/assets/img/icons/dash.svg" alt="icon">
+                <h1>Dashboard</h1>
+            </div>
+            <div onclick="NavegacaoPorPaginas('home.html')" class="voltar"><img src="/assets/img/icons/voltar.svg" alt="voltar"></div>
+        </div>
+
+        <div class="descri-section">
+            <img src="/assets/img/icons/desc-icon.svg" alt="descricao-icon">
+            <div class="desc-content">
+                Painel visual que apresenta, de maneira centralizada, um conjunto informações: indicadores e suas métricas.
+            </div>
+        </div>
+        
+        <div class="opt-box">
+            <div class="dash-opt">
+                <h1>PESQUISAR 1° RESERVATÓRIO</h1>
+            </div>
+
+            <div class="dash-opt">
+                <h1>PESQUISAR 2° RESERVATÓRIO</h1>
+            </div>
+            <div class="dash-opt-par">
+                <h1>SELECIONE O PARÂMETRO</h1>
+                <img src="assets/img/icons/seta.svg" alt="icon">
+            </div>
+        </div>
+
+        <div class="grafico">
+            <img src="assets/img/grafico-comp.png" alt="grafico">
+        </div>
+
+        <div class="date-box">
+
+            <div class="date-input">
+                <h1>De<h1>
+                <input id="dateInicio" type="date">
+            </div>
+
+            <div class="date-input">
+                <h1>Até<h1>
+                <input id="dateFinal" type="date">
+            </div>
+
+        </div>
+   
+    </body>
+    <script src="/assets/js/prop.js"></script>
+</html>

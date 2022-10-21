@@ -53,6 +53,36 @@
     width: 100%;
 }
 
+.leaflet-popup-content-wrapper{
+    border: 3px solid #fff;
+    border-radius: 5px;
+    background-color: #06346375 !important;
+    backdrop-filter: blur(4px);
+    text-align: center !important;
+}
+
+.leaflet-popup-content-wrapper h1{
+    font-family: 'Roboto' !important;
+    font-size: 1.5em !important;
+    font-weight: 700;
+    color: #fff;
+}
+
+.leaflet-popup-content-wrapper p{
+    font-family: 'Roboto' !important;
+    font-size: 1em !important;
+    font-weight: 400;
+    color: #fff;
+}
+
+.leaflet-popup-content-wrapper button{
+    font-size: 1.2em;
+    font-weight: 500;
+    border: none;
+    border-radius: 20px;
+    padding: 3px 15px;
+}
+
 /* MEDIAS */
 
 @media (min-width: 550px) {

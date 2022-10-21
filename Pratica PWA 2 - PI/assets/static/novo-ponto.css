@@ -67,3 +67,129 @@ body{
     border-radius: 10px 0 0 0;
 }
 
+.camera{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.camera img{
+    width: 30%;
+    margin-bottom: 15px;
+}
+
+.camera p{
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 1em;
+    color: #525252;
+}
+
+.input-nome{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 7%;
+}
+
+.input-nome input{
+    height: 40px;
+    width: 97%;
+    margin-top: 5px;
+    border: none;
+    border-radius: 7px;
+    background-color: #FFF;
+    padding-left: 3%;
+
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 1em;
+}
+
+.input-nome input:focus{
+    border: .5px solid #5e814d;
+}
+
+label{
+    font-family: 'Roboto';
+    font-weight: 700;
+    color: #5e814d;
+    font-size: .7em;
+}
+
+.input-lat-long{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 7%;
+}
+
+.lat, .long{
+    width: 45%;
+}
+
+.long{
+    margin-left: 9%;
+}
+
+.lat input{
+    height: 40px;
+    width: 100%;
+    margin-top: 5px;
+    border: none;
+    border-radius: 7px;
+    background-color: #FFF;
+
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 1em;
+}
+
+.long input{
+    height: 40px;
+    width: 100%;
+    margin-top: 5px;
+    border: none;
+    border-radius: 7px;
+    background-color: #FFF;
+
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 1em;
+}
+
+.select{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 7%;
+}
+
+.select select{
+    height: 40px;
+    width: 100%;
+    margin-top: 5px;
+    border: none;
+    border-radius: 7px;
+    background-color: #FFF;
+
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 1em;
+}
+
+button{
+    background-color: #004994;
+    border-radius: 50px;
+    font-family: 'Roboto';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #E8EAED;
+    font-size: 1.3em;
+    font-weight: 600;
+    padding: 7px 60px;
+    margin: 0 auto;
+    margin-top: 15%;
+}

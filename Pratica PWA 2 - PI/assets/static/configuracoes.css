@@ -49,11 +49,20 @@ body{
     align-items: center;
 }
 .conf-op{
-    background: rgba(69, 150, 233, 0.15);
+    background: rgba(69, 151, 233, 0.116);
 }
 
 .conf-op-sair{
-    background-color: #F24747;
+    background-color: #f247475b;
+}
+
+.icon{
+    width: 30px;
+    height: 25px;
+}
+
+.conf-op, .conf-op-sair .icon{
+    height: 30px;
 }
 
 .conf-op, .conf-op-sair{
@@ -61,6 +70,7 @@ body{
     height: 60px;
     margin-top: 20px;
     border-radius: 13px;
+    color: #DA1414;
 
     display: flex;
     flex-direction: row;
@@ -69,8 +79,12 @@ body{
 
 .conf-op h1 , .conf-op-sair h1{
     margin-left: 30px;
-    font-family: 'Sunflower';
-    font-size: 17px;
+    font-family: 'Roboto';
+    font-size: 1.2em;
+}
+
+.conf-op-sair h1{
+    font-weight: 800;
 }
 
 .conf-op h1{
@@ -101,7 +115,8 @@ body{
     align-items: center;
     background-color: rgba(0, 73, 148, 0.99);
     color: #ffffff;
-    font-family: 'Sunflower';
+    font-family: 'Roboto';
     font-size: 15px;
+    font-weight: 500;
     
 }

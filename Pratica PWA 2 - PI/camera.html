@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/assets/static/style.css">
+        <link rel="stylesheet" href="/assets/static/camera.css">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css" integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin=""/>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+        
+        <title>Camera</title>
+    </head>
+    <body>
+            <video controls autoplay></video>
+            <img onclick="NavegacaoPorPaginas('novo-ponto.html')" class="voltar" src="/assets/img/icons/voltar.svg" alt="voltar">
+            <div><img onclick="getStream('video')" src="/assets/img/camera-button.svg" alt="camera"></div>
+
+        <script src="/assets/js/prop.js"></script>
+    </body>
+</html>

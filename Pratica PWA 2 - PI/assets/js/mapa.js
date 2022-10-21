@@ -1,19 +1,8 @@
-var map = L.map('map');
-			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-				attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-			}).addTo(map);
-			map.fitBounds([[75, 90], [-45, -90]]);
+var map = L.map('map').setView([-8.086734, -34.904810], 13);
+
 			L.geolet({
-				position: 'bottomleft'
+				position: 'topleft'
 			}).addTo(map);
-
-// Google Map Layer
-
-googleStreets = L.tileLayer('http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}',{
-    maxZoom: 20,
-    subdomains:['mt0','mt1','mt2','mt3']
- });
- googleStreets.addTo(map);
 
  // Satelite Layer
 googleSat = L.tileLayer('http://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}',{
@@ -23,8 +12,14 @@ googleSat = L.tileLayer('http://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}',{
 googleSat.addTo(map);
 
 var baseLayers = {
-    "Satellite":googleSat,
-    "Google Map":googleStreets
+    "Satellite":googleSat
 };
 
 L.Control.geocoder().addTo(map);
+
+var icone = L.icon({
+    iconUrl: '/assets/img/icons/icon-map.png',
+    iconSize:     [70, 70]
+});
+
+L.marker([-8.072619, -34.905131], {icon: icone}).addTo(map).bindPopup("<h1>Reservatório X</h1> <p>Braço do Rio Capibaribe</p> <button onclick=NavegacaoPorPaginas('informacoes.html')>ABRIR</button>");
