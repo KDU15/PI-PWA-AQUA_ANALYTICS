@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/assets/static/style.css">
+        <link rel="stylesheet" href="/assets/static/home.css">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css" integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin=""/>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+        
+        <title>Home</title>
+    </head>
+    <body>
+        <div class="nav-menu">
+            <div class="nav-bar">
+                <img onclick="NavegacaoPorPaginas('configuracoes.html')" src="/assets/img/icons/config-icon.svg" alt="config-icon">
+                <img onclick="NavegacaoPorPaginas('dashboard.html')" src="/assets/img/icons/dash-icon.svg" alt="dash-icon">
+                <img onclick="NavegacaoPorPaginas('novo-ponto.html')" src="/assets/img/icons/ponto-icon.svg" alt="ponto-icon">
+                <img onclick="AbrirPesquisa()" src="/assets/img/icons/pesq-icon.svg" alt="pesq-icon">
+                <img onclick="NavegacaoPorPaginas('monitoramento.html')" src="/assets/img/icons/monit-icon.svg" alt="monit-icon">
+            </div>
+        </div>
+
+        <div id="map"></div>
+    
+        <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js" integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
+        <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="/assets/js/prop.js"></script>
+        <script src="/assets/js/mapa.js"></script>
+    </body>
+</html>

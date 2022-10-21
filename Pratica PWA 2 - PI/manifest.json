@@ -1,0 +1,138 @@
+{
+    "name": "PI - AIRES",
+    "short_name": "PI - AIRES",
+    "description": "Projeto Integador para visualização de pontos de monitoramento da qualidade de água.",
+    "lang": "pt-BR",
+    "dir": "auto",
+    "icons": [
+      {
+        "src": "/assets/img/pwa/128.png",
+        "sizes": "128x128",
+        "type": "image/png",
+        "purpose":"any"
+      },
+      {
+        "src": "/assets/img/pwa/144.png",
+        "sizes": "144x144",
+        "type": "image/png",
+        "purpose":"any"
+      },
+      {
+        "src": "/assets/img/pwa/152.png",
+        "sizes": "152x152",
+        "type": "image/png",
+        "purpose":"any"
+      },
+      {
+        "src": "/assets/img/pwa/167.png",
+        "sizes": "167x167",
+        "type": "image/png",
+        "purpose":"any"
+      },
+      {
+        "src": "/assets/img/pwa/180.png",
+        "sizes": "180x180",
+        "type": "image/png",
+        "purpose":"any"
+      },
+      {
+        "src": "/assets/img/pwa/196.png",
+        "sizes": "196x196",
+        "type": "image/png",
+        "purpose":"any"
+      },
+      {
+        "src": "/assets/img/pwa/512.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose":"any"
+      },
+      {
+        "src": "/assets/img/pwa/1024.png",
+        "sizes": "1024x1024",
+        "type": "image/png",
+        "purpose":"any"
+      },
+      {
+        "src": "/assets/img/pwa/mask1024.png",
+        "sizes": "1024x1024",
+        "type": "image/png",
+        "purpose":"maskable"
+      },
+      {
+        "src": "/assets/img/pwa/mask512.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose":"maskable"
+      },
+      {
+        "src": "/assets/img/pwa/mask196.png",
+        "sizes": "196x196",
+        "type": "image/png",
+        "purpose":"maskable"
+      }
+    ],
+    "shortcuts": [
+      {
+        "name": "Dois players",
+        "short_name": "Monitoramento",
+        "description": "Abre avisos da tela de monitoramento",
+        "url": "/monitoramento.html",
+        "icons": [{ "src": "/images/aviso.png", "sizes": "192x192" }]
+      },
+      {
+        "name": "Três players",
+        "short_name": "Novo ponto",
+        "description": "Cadastra um novo ponto de monitoramento",
+        "url": "/novo-ponto.html",
+        "icons": [{ "src": "/assets/img/pwa/shotcuts/novo.png", "sizes": "192x192" }]
+      }
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/img/pwa/prints/print1.png",
+        "type": "image/png",
+        "sizes": "540x720"
+      },
+      {
+        "src": "/assets/img/pwa/prints/print2.png",
+        "type": "image/jpg",
+        "sizes": "540x720"
+      },
+      {
+        "src": "/assets/img/pwa/prints/print3.png",
+        "type": "image/jpg",
+        "sizes": "540x720"
+      },
+      {
+        "src": "/assets/img/pwa/prints/print4.png",
+        "type": "image/jpg",
+        "sizes": "540x720"
+      },
+      {
+        "src": "/assets/img/pwa/prints/print5.png",
+        "type": "image/jpg",
+        "sizes": "540x720"
+      },
+      {
+        "src": "/assets/img/pwa/prints/print6.png",
+        "type": "image/jpg",
+        "sizes": "540x720"
+      }
+    ],
+    "related_applications": [
+      {
+        "platform": "chrome",
+        "url": "https://dimensions-life.netlify.app"
+      }
+    ],
+    "prefer_related_applications": true,
+    "categories": ["navigation", "productivity", "health"],
+    "display": "fullscreen",
+    "scope": "/app/",
+    "start_url": "index.html",
+    "orientation": "portrait",
+    "display_override": "minimal-ui",
+    "background_color": "#0070A3",
+    "theme_color": "#0070A3" 
+  }

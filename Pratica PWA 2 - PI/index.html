@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/assets/static/telainicial.css">
+        <link rel="stylesheet" href="/assets/static/style.css">
+
+        <meta name="description" content="PI - AIRES">
+
+		<link rel="manifest" href="manifest.json">
+
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="msapplication-TileImage" content="/assets/img/pwa/144.png">
+		<meta name="msapplication-TileColor" content="#fff">
+		<meta name="theme-color" content="#0070A3" />
+		<link rel="shortcut icon" sizes="196x196" href="/assets/img/pwa/196.png">
+		<link rel="shortcut icon" sizes="128x128" href="/assets/img/pwa/128.png">
+		<link rel="shortcut icon" sizes="512x512" href="/assets/img/pwa/512.png">
+		<link rel="shortcut icon" sizes="1024x1024" href="/assets/img/pwa/1024.png">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="apple-mobile-web-app-title" content="PI - AIRES">
+		<link rel="apple-touch-icon" href="/assets/img/pwa/144.png">
+		<link rel="apple-touch-icon" href="touch-icon-iphone.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="/assets/img/pwa/152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/pwa/180.png">
+		<link rel="apple-touch-icon" sizes="167x167" href="/assets/img/pwa/167.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/pwa/512.png">
+		<link rel="apple-touch-icon" sizes="167x167" href="/assets/img/pwa/1024.png">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<link href="/assets/img/pwa/" sizes="3200x4267" rel="apple-touch-startup-image" />
+		<link href="/assets/img/pwa/ios/ipadpro.png" sizes="3475x4633" rel="apple-touch-startup-image" />
+		<link href="/assets/img/pwa/ios/ipadpro2.png" sizes="4267x5692" rel="apple-touch-startup-image" />
+		<link href="/assets/img/pwa/ios/Iphone6Plus.png" sizes="2588x4600" rel="apple-touch-startup-image" />
+		<link href="/assets/img/pwa/ios/Iphone7.png" sizes="1563x2779" rel="apple-touch-startup-image" />
+		<link href="/assets/img/pwa/ios/IphoneSE-05.png" sizes="1333x2367" rel="apple-touch-startup-image" />
+		<link href="/assets/img/pwa/ios/IphoneX-05.png" sizes="2344x5075" rel="apple-touch-startup-image" />
+
+		<link rel="icon" type="image/png" href="assets/img/pwa/icon.png">
+
+        <title>PI</title>
+    </head>
+    <body>
+        <div class="background">
+            <div class="content content-show">
+                <div class="logo">
+                    <img src="/assets/img/logo-2.svg" alt="logo">
+                </div>
+                <img class="back-button" src="/assets/img/telainicial.svg" alt="background-button">
+                <div class="botoes botoes-show">
+                    <button onclick="NavegacaoPorPaginas('entrar.html')">ENTRAR</button>
+                </div>
+            </div>
+        </div>
+
+        <script src="/assets/js/prop.js"></script>
+        <script>
+            let newWorker;
+
+            if ('serviceWorker' in navigator) {
+              navigator.serviceWorker.register('/service-worker.js').then(reg => {
+                reg.addEventListener('updatefound', () => {
+                  // A wild service worker has appeared in reg.installing!
+                  newWorker = reg.installing;
+                  newWorker.addEventListener('statechange', () => {
+                    // Has network.state changed?
+
+                  });
+                });
+              });
+              let refreshing;
+              navigator.serviceWorker.addEventListener('controllerchange', function () {
+                if (refreshing) return;
+                window.location.reload();
+                refreshing = true;
+              });
+            }
+          </script>
+    </body>
+</html>

@@ -1,0 +1,143 @@
+.bg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg .bg-login{
+    position: relative;
+    width: 100%;
+    z-index: -1;
+}
+
+.bg .logo-login{
+    width: 145px;
+    position: absolute;
+    padding-bottom: 35px;
+}
+
+.entrar-content{
+    position: relative;
+}
+
+.entrar-content .background-login{
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    top: -50px;
+}
+
+.entrar-content .forms-entrar{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.entrar-content .forms-entrar .titulo{
+    text-align: center;
+    font-family: 'Roboto';
+    margin: 15% 0;
+}
+
+.entrar-content .forms-entrar .titulo h1{
+    font-weight: 600;
+    font-size: 3.2em;
+    color: #014183;
+}
+
+.entrar-content .forms-entrar .titulo p{
+    font-size: 1.1em;
+    font-weight: 700;
+    color: #326FAE;
+    width: 60%;
+    margin: 10px auto 0 auto;
+}
+
+.entrar-content .forms-entrar .input-user, .input-senha{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.entrar-content .forms-entrar input{
+    background-color: #fff;
+    box-shadow: inset -4px 4px 15px rgba(0, 0, 0, 15%);
+    height: 45px;
+    width: 74%;
+    border: none;
+    border-radius: 0 20px 0 20px;
+    font-size: 1.2em;
+    font-weight: 600;
+    position: relative;
+    padding-left: 55px;
+    margin: 0 0 2em 0;
+}
+
+.entrar-content .forms-entrar label{
+    font-size: 1.05em;
+    font-family: 'Roboto';
+    color: #2E6414;
+    font-weight: 600;
+    position: relative;
+    margin-bottom: 5px;
+    left: -133px;
+}
+
+.entrar-content .forms-entrar .label-senha {
+    padding-right: 7px;
+}
+
+.input-user svg, .input-senha svg{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    z-index: 1;
+    top: 11px;
+    left: 37px;
+    filter: drop-shadow(-3px 3px 4px rgba(0, 0, 0, 25%));
+}
+
+.input-user svg path, .input-senha svg path{
+    fill: #004388;
+    filter: drop-shadow(-3px 3px 4px rgba(0, 0, 0, 25%));
+}
+
+.entrar-content .forms-entrar .entrar-botao{
+    width: 89%;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px 0 25px 0;
+    border: none;
+    background-color: #12385D;
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: 700;
+    font-family: 'Roboto';
+}
+
+.entrar-content .forms-entrar .entrar-botao svg{
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+}
+
+.entrar-content .forms-entrar .botao-resg{
+    width: 60%;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 25px 0 25px;
+    border: none;
+    background-color: #2E6414;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: 'Roboto';
+    margin-top: 10px;
+}
