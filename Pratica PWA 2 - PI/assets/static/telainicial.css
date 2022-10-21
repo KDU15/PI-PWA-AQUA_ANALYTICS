@@ -61,7 +61,6 @@
 .background .content .logo img{
     width: 100%;
     height: 100%;
-    filter: drop-shadow(8px 36px 10px white) brightness(0.7);
     animation: surgir 5s forwards;
 }
 
