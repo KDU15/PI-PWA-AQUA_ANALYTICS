@@ -1,0 +1,85 @@
+body{
+    background-color: #00274F;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.background-telas{
+    position: absolute;
+    width: 100%;
+    z-index: -10;
+}
+
+.header{
+    display: flex;
+    width: 90%;
+    height: 72px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 5%;
+}
+
+.header .identificador{
+    display: flex;
+    align-items: center;
+}
+
+.header .identificador h1{
+    font-family: 'Sunflower';
+    font-size: 1.7em;
+    margin-left: 8px;
+    color: #E8EAED;
+    line-height: 0;
+}
+
+.ajuda-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    
+}
+
+
+.ajuda-op{   
+    width: 93%;
+    height: 60px;
+    margin-top: 20px;
+    background: rgba(69, 150, 233, 0.15);
+    border-radius: 13px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ajuda-op h1{
+    margin-left: 20px;
+    color: #00274F;
+    font-family: 'Sunflower';
+    font-size: 17px;
+
+}
+
+.ajuda-op img{
+    margin-right: 20px;
+}
+
+
+.footer-op{
+    position: absolute;
+    bottom: 40px;
+    width: 90%;
+    height: 45px;
+    border-radius: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 73, 148, 0.99);
+    color: #ffffff;
+    font-family: 'Sunflower';
+    font-size: 15px;
+    
+}
