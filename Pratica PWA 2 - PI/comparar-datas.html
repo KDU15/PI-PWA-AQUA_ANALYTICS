@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/static/style.css">
+        <link rel="stylesheet" href="assets/static/comparar-datas.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.css">
+        <title>Comparar Datas</title>
+    </head>
+
+    <body>
+        
+        <div class="header">
+            <div class="header-content">
+                <div class="identificador">
+                    <img src="/assets/img/icons/gota.svg" alt="icon">
+                    <h1>INFORMAÇÕES</h1>
+                </div>
+                <div onclick="NavegacaoPorPaginas('informacoes.html')" class="voltar"><img src="/assets/img/icons/voltar.svg" alt="voltar"></div>
+            </div>
+        </div>
+        <div class="info-content">
+            <h1>SERRINHA II</h1>
+
+            <h2>COMPARAR DATAS</h2>
+
+            <div class="descri-section">
+                <img src="/assets/img/icons/desc-icon.svg" alt="descricao-icon">
+                <div class="desc-content">
+                    Acompanhe a situação do ponto de monitoramento, determine o periodo que precisa acompanhar e os parametros desejados.
+                </div>
+            </div>
+
+            <div class="campo-data">
+                <p>DE</p>
+                <div class="data">
+                    <div class="titulo">DATA</div>
+                    <span>13/12/2022</span>
+                </div>
+                <img id="AbrirModal" src=".\assets\img\icons\calendar-dates.svg" alt="calendar-dates">
+                <p>ATÉ</p>
+                <div class="data">
+                    <div class="titulo">DATA</div>
+                    <span>13/12/2022</span>
+                </div>
+                <img id="AbrirModal2" src=".\assets\img\icons\calendar-dates.svg" alt="calendar-dates">
+            </div>
+
+            <div class="campo-parametro">
+                <div class="campo-parametro-content">
+                    <div class="check-info">
+                        <input type="checkbox" name="ph">
+                        <label for="ph">PH</label>
+                    </div>
+                    <div class="check-info">
+                        <input type="checkbox" name="turbidez">
+                        <label for="ph">TURBIDEZ</label>
+                    </div>
+                    <div class="check-info">
+                        <input type="checkbox" name="temperatura">
+                        <label for="ph">TEMPERATURA</label>
+                    </div>
+                    <div class="check-info">
+                        <input type="checkbox" name="oxigenio">
+                        <label for="ph">OXIGÊNIO</label>
+                    </div>
+                    <div class="check-info">
+                        <input type="checkbox" name="salinidade">
+                        <label for="ph">SALINIDADE</label>
+                    </div>
+                    <div class="check-info">
+                        <input type="checkbox" name="condutividade">
+                        <label for="ph">CONDUTIVIDADE</label>
+                    </div>
+                </div>
+            </div>
+
+            <button id="btnGerarGrafico" class="btn-gerar-grafico">GERAR GRÁFICOS</button>
+
+            <div class="campo-grafico">
+                <canvas id="ph-grafico"></canvas>
+            </div>
+
+            <div class="campo-grafico">
+                <canvas id="temp-grafico"></canvas>
+            </div>
+            
+            <div class="campo-grafico">
+                <canvas id="salin-grafico"></canvas>
+            </div>
+
+        </div>
+
+
+        <div class="modal-sair" id="Modal">
+            <div class="modal-content" id="FecharModal">
+                <img src=".\assets\img\CALENDARIO.png" alt="">
+            </div>
+        </div>
+
+        <div class="modal-sair" id="Modal2">
+            <div class="modal-content" id="FecharModal2">
+                <img src=".\assets\img\CALENDARIO.png" alt="">
+            </div>
+        </div>
+
+
+        
+    </body>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+    <script src="./assets/js/prop.js"></script>
+    
+
+</html>

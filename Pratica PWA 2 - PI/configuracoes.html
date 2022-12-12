@@ -23,28 +23,35 @@
                     <h1>aquanalytics@aires.com</h1>
                 </div>
             </div>
+            <div onclick="NavegacaoPorPaginas('home.html')" class="voltar"><img src="/assets/img/icons/voltar.svg" alt="voltar"></div>
         </div>
         <!-- ajeitar a cor do segundo svg-->
         <div class="conf-box">
             
             <div onclick="NavegacaoPorPaginas('ajuda.html')" class="conf-op">
-                <img class="icon" src="assets/img/icons/chat-int.svg" alt="icon">
-                <h1>Ajuda</h1>
+                <img class="icon" src="assets/img/icons/chat-int-2.svg" alt="icon">
+                <h1>AJUDA</h1>
                 <div class="img2">
                     <img src="assets/img/icons/seta.svg" alt="icon">
                 </div>
                 
             </div>
-            <div onclick="NavegacaoPorPaginas('entrar.html')" class="conf-op-sair">
+            <div id="AbrirModal" class="conf-op-sair">
                 <img class="icon" src="assets/img/icons/sair.svg" alt="icon">
-                <h1>Sair</h1>
+                <h1>SAIR</h1>
                 <div class="img2">
-                    <img src="assets/img/icons/seta.svg" alt="icon">
+                    <img src="assets/img/icons/seta-ver.svg" alt="icon">
                 </div>
                
             </div>
-            <div onclick="NavegacaoPorPaginas('home.html')" class="footer-op">
-                <h1>Voltar para o mapa</h1>
+        </div>
+
+        <div class="modal-sair" id="Modal">
+            <div class="modal-content">
+                <h1>VOCE TEM CERTEZA QUE DESEJA SAIR DESTE PERFIL?</h1>
+                <p>AO COMFIRMAR, VOCE SERA DIRECIONADO A TELA DE LOGIN.</p>
+                <button onclick="NavegacaoPorPaginas('index.html')" class="confirmar">CONFIRMAR</button>
+                <button id="FecharModal" class="cancelar">CANCELAR</button>
             </div>
         </div>
         

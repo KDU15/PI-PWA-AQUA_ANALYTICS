@@ -1,98 +1,78 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/static/style.css">
-    <link rel="stylesheet" href="assets/static/informacoes.css">
-    <title>Document</title>
-</head>
-<body>
-    
-    <img class="background-telas" src="assets/img/background-telas.svg" alt="background-telas">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/static/style.css">
+        <link rel="stylesheet" href="assets/static/informacoes.css">
+        <title>Document</title>
+    </head>
 
-
-    <div class="header">
-        <div class="identificador">
-            <img src="assets/img/icons/gota.svg" alt="icon">
-            <h1>Informações</h1>
-        </div>
-        <div onclick="NavegacaoPorPaginas('home.html')" class="voltar"><img src="assets/img/icons/voltar.svg" alt="voltar"></div>
-    
-    </div>
-    
-    <div class="info-box">
-        <h1>Reservatório X</h1>
-        <img src="/assets/img/imagem-reserva.png" alt="icon">
+    <body>
         
-    </div>
-
-    <div class="dados-box">
-    
-
-        <div class="dado">
-            <span class="type" >TEMP:</span>
-            <div class="temp-content">
-                <span class="valor">27</span>
-                <img src="/assets/img/icons/temp-icon.svg" alt="">
-            </div>
-
-            <span class="type">PH:</span>
-            <div class="temp-content">
-                <span class="valor">7</span>
+        <div class="header">
+            <div class="header-content">
+                <div class="identificador">
+                    <img src="/assets/img/icons/gota.svg" alt="icon">
+                    <h1>INFORMAÇÕES</h1>
+                </div>
+                <div onclick="NavegacaoPorPaginas('home.html')" class="voltar"><img src="/assets/img/icons/voltar.svg" alt="voltar"></div>
             </div>
         </div>
 
-        <div class="dado">
-            <span class="type">TURBI:</span>
-            <div class="temp-content">
-                <span class="valor">35</span>
-                <span class="medida">uN</span>
+        <div class="info-content">
+            <h1>SERRINHA II</h1>
+            <div class="tag-info-ponto">
+                RESERVATÓRIO
             </div>
-
-            <span class="ph-title">COND:</span>
-            <div class="temp-content">
-                <span class="valor">1</span>
-                <span class="medida">ms/cm²</span>
+            <div class="menu-info">
+                <div class="comparar-datas">
+                    <div class="data">
+                        <div class="titulo">DATA</div>
+                        <span>13/12/2022</span>
+                    </div>
+                    <img id="AbrirModal" src=".\assets\img\icons\calendar-dates.svg" alt="calendar-dates">
+                    <button onclick="NavegacaoPorPaginas('comparar-datas.html')">COMPARAR DATAS</button>
+                </div>
+                <button onclick="NavegacaoPorPaginas('ajustes-ponto.html')"><img src=".\assets\img\icons\config-ponto.svg" alt="config-ponto"></button>
+            </div>
+            <div class="dados-dashboard">
+                <div class="card-dado-dash">
+                    <p>PH</p>
+                    <span>7</span>
+                </div>
+                <div class="card-dado-dash">
+                    <p>TURBIDEZ</p>
+                    <span>35<p class="unidade-medida">uN</p></span>
+                </div>
+                <div class="card-dado-dash">
+                    <p>TEMP.</p>
+                    <span>27<img src=".\assets\img\icons\temp-icon.svg" alt="temp-icon"></span>
+                </div>
+                <div class="card-dado-dash cond-card">
+                    <p>CONDUTIVIDADE</p>
+                    <span>1<p class="unidade-medida">ms/cm²</p></span>
+                </div>
+                <div class="card-dado-dash salin-card alerta-card">
+                    <p>SALINIDADE</p>
+                    <span>30<p class="unidade-medida">ppt</p></span>
+                </div>
+                <div class="card-dado-dash oxig-card">
+                    <p>OXIGÊNIO</p>
+                    <span>20<p class="unidade-medida">mg/L</p></span>
+                </div>
             </div>
         </div>
 
-        <div class="dado">
-            <span class="type">SALIN:</span>
-            <div class="temp-content">
-                <span class="valor">37</span>
-                <span class="medida">ppt</span>
-            </div>
-
-            <span class="ph-title">OXIG:</span>
-            <div class="temp-content">
-                <span class="valor">8,6</span>
-                <span class="medida">mg/L</span>
+        <div class="modal-sair" id="Modal">
+            <div class="modal-content" id="FecharModal">
+                <img src=".\assets\img\CALENDARIO.png" alt="">
             </div>
         </div>
-   
 
-    </div>
+    </body>
 
-    <div class="date-box">
+    <script src="assets/js/prop.js"></script>
 
-        <div class="date-input">
-            <h1>Data<h1>
-            <input id="dateInicio" type="date">
-        </div>
-
-        <div class="option">
-            <h1>Opções</h1>
-        </div>
-    
-
-    </div>
-    
-    
-    
-    
-
-</body>
-<script src="assets/js/prop.js"></script>
 </html>

@@ -1,0 +1,200 @@
+body{
+    background: #EBEBEB;
+}
+
+.header{
+    background-image: url('../img/imagem-do-ponto.png');
+    background-size: cover;
+    display: flex;
+    width: 100%;
+    height: 30%;
+    justify-content: space-between;
+}
+
+.header-content{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    backdrop-filter: blur(2px);
+    background: rgba(0, 0, 0, 0.199);
+    padding: 20px 30px 0 30px;
+}
+
+.header .identificador{
+    display: flex;
+    align-items: center;
+}
+
+.header .identificador h1{
+    font-family: 'Roboto';
+    font-size: 1.7em;
+    margin-left: 8px;
+    color: #E8EAED;
+    line-height: 0;
+}
+
+.info-content{
+    background: #EBEBEB;
+    border-radius: 19px 19px 0 0;
+    position: relative;
+    top: -20px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto';
+    align-items: center;
+    z-index: 0;
+}
+
+.info-content h1{
+    margin: 0 auto;
+    font-size: 2.2em;
+    font-weight: 700;
+    color: #fff;
+    position: relative;
+    top: -45px;
+}
+
+.info-content h2{
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #00274D;
+    margin-top: -15px;
+    margin-right: 150px;
+}
+
+.campo-data{
+    background: #fff;
+    border-radius: 13px;
+    width: 93%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px 0;
+    margin: 20px 0;
+}
+
+.campo-data p{
+    font-weight: 600;
+    font-size: .8em;
+}
+
+.campo-data .data{
+    margin: 0 10px;
+}
+
+.campo-data .data .titulo{
+    font-size: .8em;
+    font-weight: 700;
+    color: #002F60;
+    margin-bottom: 5px;
+}
+
+.campo-data .data span{
+    font-weight: 700;
+    font-size: 1.1em;
+    color: #004D9C;
+}
+
+.campo-parametro{
+    background: #fff;
+    width: 93%;
+    border-radius: 13px;
+}
+
+.campo-parametro .check-info{
+    display: flex;
+    align-items: center;
+}
+
+.campo-parametro-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 10px;
+}
+
+.check-info input{
+    border: #002F60;
+    border-radius: 2px;
+}
+
+.check-info label{
+    font-size: .9em;
+    font-weight: 600;
+    color: #004D9C;
+}
+
+.btn-gerar-grafico{
+    width: 93%;
+    border: none;
+    background: #004D9C;
+    border-radius: 10px;
+    font-size: 1em;
+    font-weight: 700;
+    color: #fff;
+    padding: 12px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+.campo-grafico{
+    display: none;
+    background: #fff;
+    border-radius: 17px;
+    width: 93%;
+    justify-content: center;
+    margin-bottom: 15px;
+    animation-name: slideIn;
+    animation-duration: 0.4s;
+}
+
+.campo-grafico canvas{
+    width: 95% !important;
+    margin: 15px 0;
+}
+
+
+
+
+.modal-sair{
+    display: none;
+    background: rgba(0, 0, 0, 0.267);
+    backdrop-filter: blur(2px);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    align-items: flex-end;
+    animation-name: fadeIn;
+    animation-duration: 0.4s;
+}
+
+.modal-content{
+    margin: auto;
+    width: 100%;
+    font-family: 'Roboto';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    animation-name: slideIn;
+    animation-duration: 0.4s;
+}
+
+.modal-content img{
+    width: 90%;
+}
+
+@keyframes slideIn {
+    from {bottom: -300px; opacity: 0}
+    to {bottom: 0; opacity: 1}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+}

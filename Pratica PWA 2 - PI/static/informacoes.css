@@ -1,0 +1,241 @@
+body{
+    background: #EBEBEB;
+}
+
+.header{
+    background-image: url('../img/imagem-do-ponto.png');
+    background-size: cover;
+    display: flex;
+    width: 100%;
+    height: 30%;
+    justify-content: space-between;
+}
+
+.header-content{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    backdrop-filter: blur(2px);
+    background: rgba(0, 0, 0, 0.199);
+    padding: 20px 30px 0 30px;
+}
+
+.header .identificador{
+    display: flex;
+    align-items: center;
+}
+
+.header .identificador h1{
+    font-family: 'Roboto';
+    font-size: 1.7em;
+    margin-left: 8px;
+    color: #E8EAED;
+    line-height: 0;
+}
+
+.info-content{
+    background: #EBEBEB;
+    border-radius: 19px 19px 0 0;
+    position: relative;
+    top: -20px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto';
+    align-items: center;
+}
+
+.info-content::after{
+    content: "";
+    position: absolute;
+    background-color: #ff0000be;
+    height: 10px;
+    width: 50%;
+    border-radius: 0 0 50px 50px;
+}
+
+.info-content h1{
+    margin: 0 auto;
+    font-size: 2.2em;
+    font-weight: 700;
+    color: #fff;
+    position: relative;
+    top: -45px;
+}
+
+.info-content .tag-info-ponto{
+    font-weight: 700;
+    color: #002F60;
+    border: 1px solid  #002F60;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 5px 5px;
+    border-radius: 6px;
+}
+
+.menu-info{
+    width: 100%;
+    margin: 1.5em 0;
+    display: flex;
+    height: 56px;
+    justify-content: space-between;
+}
+
+.comparar-datas{
+    display: flex;
+    background: #fff;
+    border-radius: 13px;
+    height: 100%;
+    margin-left: 10px;
+    align-items: center;
+}
+
+.comparar-datas .data{
+    margin: 0 10px;
+}
+
+.comparar-datas .data .titulo{
+    font-size: .8em;
+    font-weight: 700;
+    color: #002F60;
+    margin-bottom: 5px;
+}
+
+.comparar-datas .data span{
+    font-weight: 700;
+    font-size: 1.1em;
+    color: #004D9C;
+}
+
+.comparar-datas button{
+    background: #004D9C;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 9px !important;
+    font-weight: 600;
+    margin-left: 15px;
+    margin-right: 10px;
+}
+
+.menu-info button{
+    margin-right: 10px;
+    border: none;
+    background: #004D9C;
+    border-radius: 13px;
+}
+
+.dados-dashboard{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    justify-content: space-between;
+}
+
+.dados-dashboard .card-dado-dash{
+    background: #fff;
+    border-radius: 13px;
+    padding: 15px;
+    margin-bottom: 15px;
+    display: grid;
+}
+
+.dados-dashboard .card-dado-dash p{
+    font-size: .8em;
+    font-weight: 700;
+    color: #969696;
+}
+
+.dados-dashboard .card-dado-dash span{
+    display: flex;
+    color: #004D9C;
+    font-size: 2.5em;
+    font-weight: 500;
+    align-items: flex-end;
+    margin: 0 15px;
+    margin-top: 5px;
+}
+
+.dados-dashboard .card-dado-dash span p{
+    color: #004D9C;
+    font-weight: 400;
+    font-size: .5em;
+    margin-bottom: 3px;
+}
+
+.dados-dashboard .card-dado-dash span img{
+    width: .5em;
+    margin-bottom: 3px;
+}
+
+.oxig-card{
+    width: 100%;
+}
+
+.oxig-card span{
+    margin: 0 auto !important;
+}
+
+.salin-card span, .cond-card span{
+    margin: 0 30px !important;
+}
+
+.alerta-card{
+    border: 1px solid #FF0000;
+    position: relative;
+}
+
+.alerta-card span, .alerta-card p, .alerta-card span p{
+    color: #ff0000bd !important;
+}
+
+.alerta-card::after{
+    content: '';
+    position: absolute;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid #FF0000;
+    top: 15px;
+    right: 15px;
+}
+
+.modal-sair{
+    display: none;
+    background: rgba(0, 0, 0, 0.267);
+    backdrop-filter: blur(2px);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    align-items: flex-end;
+    animation-name: fadeIn;
+    animation-duration: 0.4s;
+}
+
+.modal-content{
+    margin: auto;
+    width: 100%;
+    font-family: 'Roboto';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    animation-name: slideIn;
+    animation-duration: 0.4s;
+}
+
+.modal-content img{
+    width: 90%;
+}
+
+@keyframes slideIn {
+    from {bottom: -300px; opacity: 0}
+    to {bottom: 0; opacity: 1}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+}

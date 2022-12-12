@@ -1,0 +1,210 @@
+body{
+    background-color: #00274F;
+    position: relative;
+}
+
+.background-telas{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    z-index: -10;
+}
+
+.logo-head{
+    padding-top: 25px;
+    display: flex;
+    width: 100%;
+    height: 13%;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.logo-head h1{
+    width: 80%;
+}
+
+.descricao-logo{
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.descricao-logo .text{
+    margin-bottom: 15px;
+  
+}
+
+.img-logo img{
+    width: 90%;
+}
+   
+
+
+.conf-box{
+    margin-top: 65px;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.conf-op{
+    background: rgba(69, 151, 233, 0.116);
+}
+
+.conf-op-sair{
+    background-color: #f247475b;
+}
+
+.icon{
+    width: 30px;
+    height: 25px;
+}
+
+.conf-op, .conf-op-sair .icon{
+    height: 30px;
+}
+
+.conf-op, .conf-op-sair{
+    width: 93%;
+    height: 54px;
+    margin-top: 20px;
+    border-radius: 13px;
+    color: #DA1414;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.conf-op h1 , .conf-op-sair h1{
+    margin-left: 15px;
+    font-family: 'Roboto';
+    font-size: 1.2em;
+}
+
+.conf-op-sair h1{
+    font-weight: 800;
+}
+
+.conf-op h1{
+    color: #00274F;
+}
+
+.conf-op img , .conf-op-sair img{
+    margin-left: 25px;
+    margin-right: 10px;
+}
+
+.conf-op .img2, .conf-op-sair .img2{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin-right: 10px;
+}
+
+.footer-op{
+    position: absolute;
+    bottom: 80px;
+    width: 80%;
+    height: 45px;
+    border-radius: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 73, 148, 0.99);
+    color: #ffffff;
+    font-family: 'Roboto';
+    font-size: 15px;
+    font-weight: 500;
+    
+}
+
+
+/* MODAL */
+
+.modal-sair{
+    display: none;
+    background: rgba(0, 0, 0, 0.267);
+    backdrop-filter: blur(2px);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    align-items: flex-end;
+    animation-name: fadeIn;
+    animation-duration: 0.4s;
+}
+
+.modal-content{
+    background: #fff;
+    width: 100%;
+    border-radius: 60px 60px 0 0;
+    box-shadow: 0px 5px 15px black;
+    font-family: 'Roboto';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px 10px 50px 10px;
+    position: relative;
+    animation-name: slideIn;
+    animation-duration: 0.4s;
+}
+
+.modal-content h1{
+    font-size: 1.8em;
+    font-weight: 800;
+    color: #00274F;
+}
+
+.modal-content p{
+    font-weight: 700;
+    font-size: 1.2em;
+    color: rgba(0, 0, 0, 0.432);
+    margin: 25px 0;
+}
+
+.modal-content .confirmar{
+    font-size: 1.7em;
+    font-weight: 700;
+    border: none;
+    background: #00274F;
+    color: #fff;
+    border-radius: 13px;
+    padding: 10px 50px;
+    margin-bottom: 20px;
+}
+
+.modal-content .cancelar{
+    font-size: 1.1em;
+    font-weight: 500;
+    color: #DA1414;
+    background: none;
+    border: 1px solid #DA1414;
+    border-radius: 8px;
+    padding: 10px 30px;
+}
+
+.modal-content::after{
+    content: '';
+    top: 15px;
+    width: 25%;
+    height: 4px;
+    position: absolute;
+    border-radius: 5px;
+    background: #0000001c;
+}
+
+@keyframes slideIn {
+    from {bottom: -300px; opacity: 0}
+    to {bottom: 0; opacity: 1}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+}

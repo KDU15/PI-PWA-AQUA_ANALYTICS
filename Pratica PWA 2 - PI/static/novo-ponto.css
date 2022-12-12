@@ -1,0 +1,195 @@
+body{
+    background-color: #00274F;
+    position: relative;
+}
+
+.background-telas{
+    position: absolute;
+    width: 100%;
+    z-index: -10;
+}
+
+.header{
+    display: flex;
+    width: 90%;
+    height: 72px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 5%;
+}
+
+.header .identificador{
+    display: flex;
+    align-items: center;
+}
+
+.header .identificador h1{
+    font-family: 'Roboto';
+    font-size: 1.7em;
+    margin-left: 8px;
+    color: #E8EAED;
+    line-height: 0;
+}
+
+.descri-section{
+    margin-top: 12px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.descri-section .desc-content{
+    width: 70%;
+    height: 60px;
+    background-color: #EBEBEB;
+    position: relative;
+    border-radius: 7px 0 0 0;
+
+    font-family: 'Roboto';
+    font-weight: 900;
+    font-size: .9em;
+    color: #03030381;
+    padding: 7px 0 0 7px;
+}
+.descri-section img{
+    margin-right: 5px;
+}
+
+.descri-section .desc-content::after{
+    content: '';
+    position: absolute;
+    background: linear-gradient(169deg, rgb(0 73 148) -5%, transparent 43%), linear-gradient(48deg, rgb(235 235 235) 0%,rgba(37,141,200,0) 100%);
+    top: -2px;
+    left: -1.6px;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    border-radius: 10px 0 0 0;
+}
+
+.camera{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.camera img{
+    width: 30%;
+    margin-bottom: 15px;
+}
+
+.camera p{
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 1em;
+    color: #525252;
+}
+
+.input-nome{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 7%;
+}
+
+.input-nome input{
+    height: 40px;
+    width: 97%;
+    margin-top: 5px;
+    border: none;
+    border-radius: 7px;
+    background-color: #FFF;
+    padding-left: 3%;
+
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 1em;
+}
+
+.input-nome input:focus{
+    border: .5px solid #5e814d;
+}
+
+label{
+    font-family: 'Roboto';
+    font-weight: 700;
+    color: #5e814d;
+    font-size: .7em;
+}
+
+.input-lat-long{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 7%;
+}
+
+.lat, .long{
+    width: 45%;
+}
+
+.long{
+    margin-left: 9%;
+}
+
+.lat input{
+    height: 40px;
+    width: 100%;
+    margin-top: 5px;
+    border: none;
+    border-radius: 7px;
+    background-color: #FFF;
+
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 1em;
+}
+
+.long input{
+    height: 40px;
+    width: 100%;
+    margin-top: 5px;
+    border: none;
+    border-radius: 7px;
+    background-color: #FFF;
+
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 1em;
+}
+
+.select{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 7%;
+}
+
+.select select{
+    height: 40px;
+    width: 100%;
+    margin-top: 5px;
+    border: none;
+    border-radius: 7px;
+    background-color: #FFF;
+
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 1em;
+}
+
+button{
+    background-color: #004994;
+    border-radius: 50px;
+    font-family: 'Roboto';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #E8EAED;
+    font-size: 1.3em;
+    font-weight: 600;
+    padding: 7px 60px;
+    margin: 0 auto;
+    margin-top: 15%;
+}
